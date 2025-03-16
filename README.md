@@ -20,7 +20,7 @@ The server supports **threading, request buffering, and graceful shutdown**.
 ### 1️⃣ Step 1: Clone the Repository  
 If you haven’t already, clone this repository:  
 ```sh
-git clone https://github.com/your-username/multithread-webserver.git
+git clone https://github.com/khanhthinh2000/multithread-webserver.git
 cd multithread-webserver
 ```
 
