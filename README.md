@@ -38,12 +38,12 @@ Use the following command to start the server:
 ./webserver -d www -p 8080 -t 4 -b 10
 ```
 
-Command Options:
+### Command Options:
+- `-d www` → Directory for HTML files  
+- `-p 8080` → Listen on port **8080**  
+- `-t 4` → Use **4 worker threads**  
+- `-b 10` → Buffer size of **10 requests**  
 
--d www → Directory for HTML files
--p 8080 → Listen on port 8080
--t 4 → Use 4 worker threads
--b 10 → Buffer size of 10 requests
 
 ### 4️⃣ Step 4: Open in a Browser
 Once the server is running, open these links in a web browser:
@@ -63,14 +63,17 @@ Press Ctrl + C to stop the server.
 The server closes all connections and cleans up worker threads before exiting.
 Ensures no memory leaks and no deadlocks.
 
-📂 Project Files
-File	Description
-src/webserver.c	Main web server code (multi-threaded implementation)
-src/request.c	Handles HTTP requests
-src/request.h	Header file for request handling
-Makefile	Used to compile the server
-www/index.html	Home page for the web server
-README.md	Project documentation
+### 📁 Project Files  
+
+| File | Description |
+|------|------------|
+| `src/webserver.c`  | Main web server code (multi-threaded implementation) |
+| `src/request.c`  | Handles HTTP requests |
+| `src/request.h`  | Header file for request handling |
+| `Makefile`   | Used to compile the server |
+| `www/index.html`  | Home page for the web server |
+| `README.md`  | Project documentation |
+
 
 👤 Author
 👤 Your Name
