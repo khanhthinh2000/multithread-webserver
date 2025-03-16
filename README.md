@@ -28,12 +28,14 @@ To build the server, run:
 ```sh
 make clean
 make
+```
 
 ### 3️⃣ Step 3: Run the Web Server
 Use the following command to start the server:
 
 ```sh
 ./webserver -d www -p 8080 -t 4 -b 10
+```
 
 Command Options:
 
