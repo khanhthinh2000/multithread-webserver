@@ -24,12 +24,14 @@ git clone https://github.com/your-username/multithread-webserver.git
 cd multithread-webserver
 ```
 
+
 ### 2️⃣ **Step 2: Compile the Web Server**
 To build the server, run:
 ```sh
 make clean
 make
 ```
+
 
 ### 3️⃣ Step 3: Run the Web Server
 Use the following command to start the server:
@@ -48,20 +50,25 @@ Use the following command to start the server:
 ### 4️⃣ Step 4: Open in a Browser
 Once the server is running, open these links in a web browser:
 
-http://localhost:8080/index.html
+- `http://localhost:8080/index.html
 
-🔧 How It Works
-1️⃣ Producer-Consumer Model
-The main thread (producer) accepts client connections and adds them to a request queue.
-Worker threads (consumers) retrieve requests from the queue and process them.
-The web server serves the requested HTML files to clients.
-2️⃣ Thread Synchronization
-The server uses mutex locks and condition variables to ensure thread-safe access to the request queue.
-This prevents race conditions and deadlocks.
-3️⃣ Graceful Shutdown (Ctrl + C)
-Press Ctrl + C to stop the server.
-The server closes all connections and cleans up worker threads before exiting.
-Ensures no memory leaks and no deadlocks.
+
+## 🔧 How It Works  
+
+### 1️⃣ Producer-Consumer Model  
+- The **main thread (producer)** accepts client connections and adds them to a **request queue**.  
+- **Worker threads (consumers)** retrieve requests from the queue and process them.  
+- The web server serves the **requested HTML files** to clients.  
+
+### 2️⃣ Thread Synchronization  
+- The server uses **mutex locks** and **condition variables** to ensure **thread-safe access** to the request queue.  
+- This prevents **race conditions** and **deadlocks**.  
+
+### 3️⃣ Graceful Shutdown (`Ctrl + C`)  
+- Press **`Ctrl + C`** to stop the server.  
+- The server **closes all connections and cleans up worker threads** before exiting.  
+- Ensures **no memory leaks and no deadlocks**.  
+
 
 ### 📁 Project Files  
 
@@ -75,6 +82,7 @@ Ensures no memory leaks and no deadlocks.
 | `README.md`  | Project documentation |
 
 
-👤 Author
-👤 Your Name
-📧 Contact: your.email@example.com
+## 👤 Author  
+
+### 🧑‍💻 Thinh Le  
+📧 Contact: [khanhthinh2000@gmail.com](mailto:khanhthinh2000@gmail.com)
