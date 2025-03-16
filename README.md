@@ -9,8 +9,7 @@ The server supports **threading, request buffering, and graceful shutdown**.
 ## ✅ Features  
 ✔️ Handles **multiple client requests** using threads  
 ✔️ Uses a **request queue (buffer)**  
-✔️ Implements **mutex locks** and **condition variables**  
-✔️ Supports **Ctrl + C (`SIGINT`)** for graceful shutdown  
+✔️ Implements **mutex locks** and **condition variables**   
 ✔️ Properly **closes all connections** when stopped  
 
 ---
